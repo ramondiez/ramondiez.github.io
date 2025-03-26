@@ -32,15 +32,15 @@ This mimics how real-world social interactions occur, where both parties engage 
 
 The final outcome is to implement a natural daily challenge that we, as human beings usually have, such as scheduling a trip where we need to check the weather, hotels, recommendations, and have memory of past experiences.
 
-Our starting architecture creates a dynamic interaction where demanders form a one-to-one relationship with each solver, enabling continuous communication between them.
-This back-and-forth exchange allows solvers to provide specialized expertise and capabilities while maintaining their independent functions.
-The architecture establishes clear boundaries between different solvers, ensuring each can focus on their specific responsibilities without interference.
-Each solver operates with a dedicated purpose, offering unique resources and tools that contribute to the overall system while maintaining their autonomy.
-The host application manages these multiple relationships, coordinating how demanders connect with their respective solvers to create an integrated yet modular system.
+Our starting architecture creates a dynamic interaction where **demanders** form a one-to-one relationship with each **solver**, enabling continuous communication between them.
+This back-and-forth exchange allows **solvers** to provide specialized expertise and capabilities while maintaining their independent functions.
+The architecture establishes clear boundaries between different **solvers**, ensuring each can focus on their specific responsibilities without interference.
+Each **solver** operates with a dedicated purpose, offering unique resources and tools that contribute to the overall system while maintaining their autonomy.
+The host application manages these multiple relationships, coordinating how **demanders** connect with their respective **solvers** to create an integrated yet modular system.
 
-The beauty of this approach is in its simplicity. While the system itself is straightforward, it creates a foundation where each solver provides focused functionality in isolation, yet multiple solvers can be combined seamlessly through a shared protocol that enables interoperability. Just as primitive structures evolve to meet new needs, our architecture follows design principles where features can be added progressively as solvers and demanders evolve independently.
+The beauty of this approach is in its simplicity. While the system itself is straightforward, it creates a foundation where each **solver** provides focused functionality in isolation, yet multiple **solvers** can be combined seamlessly through a shared protocol that enables interoperability. Just as primitive structures evolve to meet new needs, our architecture follows design principles where features can be added progressively as **solvers** and **demanders** evolve independently.
 
-In this first release, we are implementing a web content demander - a component that will request and receive information from solvers.
+In this first release, we are implementing a web content **demander** - a component that will request and receive information from **solvers**.
 
 ¿Keep with me to see how this solution evolves!
 

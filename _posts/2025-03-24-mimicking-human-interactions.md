@@ -8,23 +8,8 @@ image:
   alt: Mimicking Humans
 ---
 
-## Mimicking Human Interactions
 
-Welcome to my blog series where we'll explore how to build an agentic solution that mimics human daily interactions. In this series, we'll examine how complex human behaviors can emerge from simple rules of interaction between agents.
-Each chapter will introduce a concept or feeling and I will provide its implementation, showing how agent-based models can represent human-like interactions while maintaining simplicity at their core.
-
-Agent-based thinking, views social interactions as occurring when both parties prefer having them over not having them, with each seeking the form of interaction that ranks highest in their preferences.
-This approach isn't limited to monetary exchanges between strangers but extends to scientific collaborations, romantic relationships, and commitments to voluntary organizations - all captured by the same logical framework.
-
-As we progress through this series, we'll explore how agents can be designed with varying degrees of human-likeness, carefully selecting which features to faithfully match and which to deliberately omit.
-We'll examine how people naturally attempt to "naturalize" unfamiliar agents by integrating them into their existing frameworks of knowledge and expectations.
-This process of accommodation and adaptation reveals how humans test boundaries of commonly shared expectations to assign new entities a place within their familiar cognitive and practical order.
-
-By understanding these dynamics, we can create agent-based models composed of decision-making heuristics, non-linear interaction topologies, and learning rules that generate complex emergent behaviors from simple foundations.
-
-Join us as we decode the fascinating intersection of human behavior and artificial agency!
-
-### Journey Kick Off
+### Abstract
 
 In the world of complex systems, interactions between agents follow simple rules that lead to emergent behaviors and structures.
 Agent-based modeling represents a bottom-up approach where the richness of structures comes from these simple interaction rules.
@@ -41,6 +26,32 @@ Instead, they operate based on local information and short-term behavior, simila
 The beauty of this approach is that many previously intractable problems suddenly become accessible.
 By focusing on the interactional structure rather than the complexity of each individual agent, we can model various systems - from neurons in a brain to humans in a market - all understood as systems of interacting agents.
 This mimics how real-world social interactions occur, where both parties engage when it benefits them and seek interactions that align with their preferences.
+
+### Starting the journey
+
+
+The final outcome is to implement a natural daily challenge that we, as human beings usually have, such as scheduling a trip where we need to check the weather, hotels, recommendations, and have memory of past experiences.
+
+Our starting architecture creates a dynamic interaction where demanders form a one-to-one relationship with each solver, enabling continuous communication between them.
+This back-and-forth exchange allows solvers to provide specialized expertise and capabilities while maintaining their independent functions.
+The architecture establishes clear boundaries between different solvers, ensuring each can focus on their specific responsibilities without interference.
+Each solver operates with a dedicated purpose, offering unique resources and tools that contribute to the overall system while maintaining their autonomy.
+The host application manages these multiple relationships, coordinating how demanders connect with their respective solvers to create an integrated yet modular system.
+
+The beauty of this approach is in its simplicity. While the system itself is straightforward, it creates a foundation where each solver provides focused functionality in isolation, yet multiple solvers can be combined seamlessly through a shared protocol that enables interoperability. Just as primitive structures evolve to meet new needs, our architecture follows design principles where features can be added progressively as solvers and demanders evolve independently.
+
+In this first release, we are implementing a web content demander - a component that will request and receive information from solvers.
+
+¿Keep with me to see how this solution evolves!
+
+
+![Architecture](/assets/img/posts/mimicking-human-interactions/mimicking-humans-architecture.png)
+
+
+Follow all the implementation details yourself using this [github](https://www.google.com) repository
+
+
+
 
 ### Technology Stackset
 
@@ -59,26 +70,3 @@ The MCP Server implements the server-side of the protocol, responsible for expos
 - MCP functions like a USB-C port (*it has taken a while*) for AI applications, providing a standardized way to connect AI models to various data sources and tools.
 - MCP standardization helps applications provide context to LLMs through an open protocol. 
 - MCP provides a growing list of pre-built integrations that LLMs can directly plug into.
-
-
-
-
-### Inial Approach
-
-Our starting architecture works like this: we have a client that sends requests, and servers that respond with information.
-This back-and-forth creates a conversation where one part asks and another answers, much like how we naturally interact with our environment to get what we need.
-
-The beauty of this approach is in its simplicity. While the system itself is straightforward, it creates a foundation that can grow more complex over time.
-Just as primitive structures evolve to meet new needs, our architecture will develop additional components as we move forward.
-
-This interaction mimics how living things process information from their surroundings. Everything is present in the original, simple forms - a basic unit interacting with its environment, taking in what it needs.
-Our system follows this natural pattern, where the apparent complexity of behavior reflects the environment it operates in.
-
-As we continue building, we'll add more agents and components to handle increasingly complex interactions.
-This gradual evolution mirrors how simple local exchanges can eventually lead to more sophisticated systems and behaviors.
-
-
-![Architecture](/assets/img/posts/mimicking-human-interactions/mimicking-humans-architecture.png)
-
-
-Follow all the implementation details yourself using this [github](https://www.google.com) repository !!!
